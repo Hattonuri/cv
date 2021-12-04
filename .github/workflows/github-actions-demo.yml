@@ -1,8 +1,8 @@
-name: GitHub Actions Demo
 on: [push]
 jobs:
   BuildPDF:
     runs-on: ubuntu-20.04
+    name: A job to build PDF from .tex
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
