@@ -1,0 +1,7 @@
+name: 'BuildPDF'
+description: 'Builds PDF from .tex file'
+inputs:
+outputs:
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-COPY . /resume
+COPY ./CV/main.tex /CV/main.tex
 
 ENV DEBIAN_FRONTEND=noninteractive 
 
@@ -14,6 +14,6 @@ RUN apt-get update                                  \
 CMD ["pdflatex",                                    \
      "-interaction=nonstopmode",                    \
      "-halt-on-error",                              \
-     "-output-directory","/resume",                 \
-     "main.tex"]
+     "-output-directory","/CV",                     \
+     "/CV/main.tex"]
 
