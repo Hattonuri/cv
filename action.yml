@@ -3,3 +3,5 @@ description: 'Builds PDF from .tex file'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  volumes: 
+    - CV:/CV
