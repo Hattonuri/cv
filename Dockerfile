@@ -1,7 +1,5 @@
 FROM ubuntu:20.04
 
-COPY ./CV/main.tex /CV/main.tex
-
 ENV DEBIAN_FRONTEND=noninteractive 
 
 RUN apt-get update                                  \
