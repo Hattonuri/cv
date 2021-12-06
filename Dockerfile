@@ -9,9 +9,9 @@ RUN apt-get update                                  \
                           texlive-fonts-extra       \
                           texlive-latex-extra
 
-CMD ls -R && pdflatex  \
-  -interaction=nonstopmode \
-  -halt-on-error \
-  -output-directory /CV \
-  /CV/main.tex
+CMD pdflatex                                        \
+    -interaction=nonstopmode                        \
+    -halt-on-error                                  \
+    -output-directory /CV                           \
+    /CV/main.tex
 
