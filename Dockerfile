@@ -2,8 +2,6 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive 
 
-ADD CV /CV
-
 RUN apt-get update                                  \
     && apt-get upgrade                              \
     && apt-get install -y texlive-latex-base        \
