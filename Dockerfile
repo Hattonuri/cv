@@ -9,8 +9,6 @@ RUN apt-get update                                  \
                           texlive-fonts-extra       \
                           texlive-latex-extra
 
-RUN ls / && ls /CV 
-
 CMD ["pdflatex",                                    \
      "-interaction=nonstopmode",                    \
      "-halt-on-error",                              \
