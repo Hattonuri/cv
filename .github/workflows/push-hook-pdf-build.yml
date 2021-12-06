@@ -10,7 +10,7 @@ jobs:
         run: docker build -t pdfbuilder .
         # uses: ./
       - run: ls -R
-      - run: docker run --name pdfbuilder_container -v CV:/CV pdfbuilder
+      - run: docker run --name pdfbuilder_container --mount src=CV,target=/CV,type=bind pdfbuilder
       - run: |
           git config user.name 'Dmitry Stasenko'
           git config user.email 'hattonuri@users.noreply.github.com'
