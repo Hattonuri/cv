@@ -14,6 +14,6 @@ jobs:
           git config user.name 'Dmitry Stasenko'
           git config user.email 'hattonuri@users.noreply.github.com'
           git checkout -B "to_show_in_link"
-          git add cv/main.pdf
+          git add cv/resume.pdf
           git commit -m "Push cv from CI"
           git push --set-upstream origin to_show_in_link

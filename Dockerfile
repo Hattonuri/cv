@@ -13,5 +13,5 @@ CMD pdflatex                                        \
     -interaction=nonstopmode                        \
     -halt-on-error                                  \
     -output-directory /cv                           \
-    /cv/main.tex
+    /cv/resume.tex
 
