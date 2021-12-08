@@ -12,6 +12,6 @@ RUN apt-get update                                  \
 CMD pdflatex                                        \
     -interaction=nonstopmode                        \
     -halt-on-error                                  \
-    -output-directory /CV                           \
-    /CV/main.tex
+    -output-directory /cv                           \
+    /cv/main.tex
 
