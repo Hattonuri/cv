@@ -13,6 +13,7 @@ jobs:
       - run: |
           git config user.name 'Dmitry Stasenko'
           git config user.email 'hattonuri@users.noreply.github.com'
+          git checkout -B "to_show_in_link"
           git add CV/main.pdf
           git commit -m "Push CV from CI"
           git push
