@@ -16,4 +16,4 @@ jobs:
           git checkout -B "to_show_in_link"
           git add CV/main.pdf
           git commit -m "Push CV from CI"
-          git push
+          git push --set-upstream origin to_show_in_link
