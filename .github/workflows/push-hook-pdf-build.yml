@@ -31,6 +31,7 @@ jobs:
         run: |
           git config user.name 'Dmitry Stasenko'
           git config user.email 'hattonuri@users.noreply.github.com'
+          git fetch origin
           (git checkout to_show_in_pages && git pull) || git checkout -b to_show_in_pages
           git add resume.pdf
           git commit -m "Push cv from CI"
